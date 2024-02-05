@@ -1,8 +1,27 @@
 
 <html>
     <head>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter:wght@400&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
         <style>
+            body {
+                background-color:#ddc8ff;
+                font-family: "Architects Daughter";
+                max-width: 1000px;
+                margin: auto;
+            }
+
+            img {
+                border: solid 3px #000;
+                border-radius: 5px;
+            }
+            #combos {
+                text-align :center;
+                font-size: 50px;
+                font-weight: 900;
+                text-decoration:underline;
+            }
             #pageTitle {
                 font-size: 50px;
                 width: 50%;
@@ -11,9 +30,10 @@
             }
 
             #pagemenu {
-                width: 50%;
+                width: 100%;
                 margin: auto;
-                text-align: center;   
+                text-align: center; 
+                display:inline-flex  
             }
             #pageTitleHeart {
                 font-size: 40px;
@@ -25,8 +45,13 @@
                 text-align: center;   
             }
 
+            #lollipops {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
             .lollipop {
-                display:block;
+                flex: 1 1 150px;
                 margin: 25px;
             }
             
@@ -63,21 +88,18 @@
             </div>
             <div>
                 <p style="text-align: center;font-size: 20px;">
-                    Welcome to  I <i class="fa fa-heart" style="color: red;"></i> lollipops! My name is Lexy and my sister's name is Hayley.
+                    Welcome to  I <i class="fa fa-heart" style="color: red;"></i> Lollipops! My name is Lexy and my sister's name is Hayley.
                 </p>
             </div>
             <div id="pageMenu">
-                <div>
+                <div id="lollipops">
                     <div class="lollipop">
                         <div class="lollipop-image">
                             <img src="images/chupachups.jpg" width="50"/>
                         </div>
                         <div class="lollipop-description">
-                            <div class="lollipop-name">Chupa Chups.......................................</div>
+                            <div class="lollipop-name">Chupa Chups..........................................$0.50</div>
                             <div>Cherry, strawberry, choco vanilla, lemon, green apple, creamy strawberry, orange</div>
-                        </div>
-                        <div class="lollipop-price">
-                            $0.50
                         </div>
                     </div>
                     <div class="lollipop">
@@ -85,11 +107,8 @@
                             <img src="images/blowpop.jpg" width="50"/>
                         </div>
                         <div class="lollipop-description">
-                            <div class="lollipop-name">Blow Pops............................................</div>
+                            <div class="lollipop-name">Blow Pops............................................$0.50</div>
                             <div>Watermelon, cherry, grape, strawberry</div>
-                        </div>
-                        <div class="lollipop-price">
-                            $0.50
                         </div>
                     </div>
                     <div class="lollipop">
@@ -97,11 +116,8 @@
                             <img src="images/tootsie.jpg" width="50"/>
                         </div>
                         <div class="lollipop-description">
-                            <div class="lollipop-name">Tootsie Pops............................................</div>
+                            <div class="lollipop-name">Tootsie Pops............................................$0.50</div>
                             <div>Cherry, grape</div>
-                        </div>
-                        <div class="lollipop-price">
-                            $0.50
                         </div>
                     </div>
                     <div class="lollipop">
@@ -109,15 +125,56 @@
                             <img src="images/minitootsie.jpg" width="50"/>
                         </div>
                         <div class="lollipop-description">
-                            <div class="lollipop-name">Mini Tootsie Pops..................................</div>
+                            <div class="lollipop-name">Mini Tootsie Pops............................................$0.25</div>
                             <div>cherry</div>
                         </div>
-                        <div class="lollipop-price">
-                            $0.25
-                        </div>
                     </div>
+                </div>
+            
+                    
+        </div>
+        <hr style="border:solid 3px">
+        <div id="COMBOS">COMBOS</div>
+        <div id="lollipops">
+            <div class="lollipop">
+                <div class="lollipop-image">
+                    <img src="images/choc-strawberry-combo.png" width="50"/>
+                </div>
+                <div class="lollipop-description">
+                    <div class="lollipop-name">Chocolate Covered Strawberry.......................................... $1.00</div>
+                    <div> Strawberry Blow Pop + Chocolate Cupa Chup</div>
+                </div>
+            </div>
+            <div class="lollipop">
+                <div class="lollipop-image">
+                    <img src="images/very-cherry-combo.png" width="50"/>
+                </div>
+                <div class="lollipop-description">
+                    <div class="lollipop-name">Very Cherry............................................$1.00</div>
+                    <div>Cherry Blow Pop + Strawberry Tootsie Pop</div>
+                </div>
+            </div>
+            <div class="lollipop">
+                <div class="lollipop-image">
+                    <img src="images/double-trouble-combo.png" width="50"/>
+                </div>
+                <div class="lollipop-description">
+                    <div class="lollipop-name">Double Trouble.........................................$1.00</div>
+                    <div>Lemon Chupa Chup + Green Apple Chupa Chup</div>
+                </div>
+            </div>
+            <div class="lollipop">
+                <div class="lollipop-image">
+                    <img src="images/grape-and-ape-combo.png" width="50"/>
+                </div>
+                <div class="lollipop-description">
+                    <div class="lollipop-name">Grape And An Ape............................................$1.00</div>
+                    <div>Grape Blow Pop + Green Apple Chupa Chup</div>
                 </div>
             </div>
         </div>
     </body>
 </html>
+<hr style="border:solid 3px">
+<div id="COMBOS">HOURS</div>
+<div style="font-size: 35px;text-align: center;">We are open afternoons during the summer on Gable ST.</div>
